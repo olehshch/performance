@@ -98,7 +98,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/home/olehs/vrt.xml</stringProp>
+          <stringProp name="filename">/var/lib/jenkins/workspace/performance_showcase/vrt.xml</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
@@ -138,7 +138,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/home/olehs/ar.xml</stringProp>
+          <stringProp name="filename">/var/lib/jenkins/workspace/performance_showcase/ar.xml</stringProp>
         </ResultCollector>
         <hashTree/>
         <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="true">
@@ -169,7 +169,7 @@
               <assertionsResultsToSave>0</assertionsResultsToSave>
             </value>
           </objProp>
-          <stringProp name="filename">/home/olehs/tps.csv</stringProp>
+          <stringProp name="filename">/var/lib/jenkins/workspace/performance_showcase/tps.csv</stringProp>
           <longProp name="interval_grouping">1000</longProp>
           <boolProp name="graph_aggregated">false</boolProp>
           <stringProp name="include_sample_labels"></stringProp>
@@ -180,14 +180,14 @@
           <boolProp name="exclude_checkbox_state">false</boolProp>
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
-        <kg.apc.jmeter.listener.GraphsGeneratorListener guiclass="TestBeanGUI" testclass="kg.apc.jmeter.listener.GraphsGeneratorListener" testname="jp@gc - Graphs Generator" enabled="false">
+        <kg.apc.jmeter.listener.GraphsGeneratorListener guiclass="TestBeanGUI" testclass="kg.apc.jmeter.listener.GraphsGeneratorListener" testname="jp@gc - Graphs Generator" enabled="true">
           <boolProp name="aggregateRows">false</boolProp>
           <boolProp name="autoScaleRows">false</boolProp>
           <stringProp name="endOffset"></stringProp>
           <stringProp name="excludeLabels"></stringProp>
           <boolProp name="excludeSamplesWithRegex">false</boolProp>
           <intProp name="exportMode">0</intProp>
-          <stringProp name="filePrefix"></stringProp>
+          <stringProp name="filePrefix">PERF</stringProp>
           <stringProp name="forceY"></stringProp>
           <stringProp name="granulation">60000</stringProp>
           <intProp name="graphHeight">600</intProp>
@@ -197,12 +197,12 @@
           <stringProp name="limitRows">150</stringProp>
           <stringProp name="lineWeight"></stringProp>
           <stringProp name="lowCountLimit"></stringProp>
-          <stringProp name="outputBaseFolder">/var/lib/jenkins/jobs/performance/workspace/graphs/</stringProp>
+          <stringProp name="outputBaseFolder">/var/lib/jenkins/workspace/performance_showcase/graphs</stringProp>
           <boolProp name="paintGradient">true</boolProp>
           <boolProp name="paintZeroing">true</boolProp>
           <boolProp name="preventOutliers">false</boolProp>
           <boolProp name="relativeTimes">false</boolProp>
-          <stringProp name="resultsFileName">/home/olehs/vrt.xml</stringProp>
+          <stringProp name="resultsFileName">/var/lib/jenkins/workspace/performance_showcase/vrt.xml</stringProp>
           <stringProp name="startOffset"></stringProp>
           <stringProp name="successFilter"></stringProp>
         </kg.apc.jmeter.listener.GraphsGeneratorListener>
